@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri May 11 18:13:54 2018
-
-@author: Prashant
-"""
-
 ### Road-user data
 FaultType = pd.read_csv('datafile_4.csv')
 FaultType = FaultType.drop(FaultType.index[[34,37]])
@@ -40,7 +33,7 @@ plt.legend(label,loc="best")
 plt.show()
 
 # Involvement of different types of vehicles
-RoadUserDf = pd.read_csv('datafile_3.csv')
+RoadUserDf = pd.read_csv('datafile_4.csv')
 if RoadUserDf.loc[['Telangana',12]] == "nan":
     print(1)
 
